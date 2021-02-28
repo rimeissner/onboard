@@ -7,6 +7,7 @@ async function check(
   walletChecks: Array<WalletCheckInit | WalletCheckModule> | undefined,
   networkId: number
 ): Promise<WalletCheckModule[]> {
+  console.error("WALLET CHECK")
   if (walletChecks) {
     const checks = walletChecks.map(
       (checkOrModule: WalletCheckInit | WalletCheckModule) => {

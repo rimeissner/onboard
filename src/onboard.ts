@@ -31,10 +31,12 @@ import {
 } from './interfaces'
 
 import initializeModules from './modules'
+import { checkSafeApp } from './modules/safe'
 
 let onboard: any
 
 function init(initialization: Initialization): API {
+  console.error("Hello", initialization)
   if (onboard) {
     console.warn('onboard has already been initialized')
     onboard.$destroy()
@@ -135,6 +137,8 @@ function init(initialization: Initialization): API {
         }
       })
     }
+
+    checkSafeApp().catch(console.error)
   }
 
   function walletSelect(autoSelectWallet?: string): Promise<boolean> {
