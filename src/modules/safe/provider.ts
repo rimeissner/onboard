@@ -1,5 +1,5 @@
 
-import { SafeAppsSDK, SafeInfo } from '@gnosis.pm/safe-apps-sdk'
+import SafeAppsSDK, { SafeInfo } from '@gnosis.pm/safe-apps-sdk'
 
 const NETWORK_CHAIN_ID: Record<string, number> = {
     'MAINNET': 1,

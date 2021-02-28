@@ -3,7 +3,7 @@ import {
     WalletInterface
 } from '../../interfaces'
 import { SafeAppProvider } from './provider'
-import { SafeAppsSDK, SafeInfo } from '@gnosis.pm/safe-apps-sdk'
+import SafeAppsSDK, { SafeInfo } from '@gnosis.pm/safe-apps-sdk'
 
 const sdk = new SafeAppsSDK()
 
